@@ -41,6 +41,7 @@
   line-height: 120%;
   color: var(text-color);
   text-align: center;
+  /* outline: solid tomato; */
 }
 .form-label {
   margin-left: 14px;
