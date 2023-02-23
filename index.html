@@ -17,7 +17,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-28b9fc51.css">
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-962cc48a.css">
   </head>
   <body>
     <!-- <section>
@@ -56,29 +56,39 @@
 </header>
 
     <main>
-      <section class="hero">
-  <div class="order">
-    <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="hero-desc">
-      With just a few clicks, you can have your favorite meals delivered
-      straight to your doorstep, no matter where you are. Order now and enjoy a
-      hassle-free and delicious meal from the comfort of your own home.
-    </p>
-    <button type="submit" class="hero-btn">Order Now</button>
-  </div>
-  <div class="slider-container">
-    <div class="outer-circle">
-      <button type="button" class="left-slider">
-        <svg class="left-arrow" width="40" height="48">
-          <use href="../img/icons.svg#icon-left-arrow"></use>
-        </svg>
-      </button>
-      <img src="../img/hero-images/slider-option-1.png" alt="food option" />
-      <button type="button" class="left-slider">
-        <svg class="right-arrow" width="40" height="48">
-          <use href="../img/icons.svg#icon-right-arrow"></use>
-        </svg>
-      </button>
+      <section id="home" class="hero-section">
+  <div class="hero-container">
+    <div class="order">
+      <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero-desc">
+        With just a few clicks, you can have your favorite meals
+        delivered </br>
+        straight to your doorstep, no matter where you are. Order now and enjoy
+        a hassle-free and delicious meal from the comfort of your own home.
+      </p>
+      <button type="submit" class="hero-btn">Order Now</button>
+    </div>
+    <div class="slider-container">
+      <div class="outer-circle">
+        <button type="button" class="left-slider slider-btn" data-modal-open>
+          <svg class="left-arrow" width="40" height="48">
+            <use
+              href="../img/icons.svg#icon-left-arrow"
+              class="icon-left-arrow"
+            ></use>
+          </svg>
+        </button>
+        <img
+          src="../img/hero-images/slider-option-1.png"
+          class="img-food"
+          alt="food option"
+        />
+        <button type="button" class="right-slider slider-btn">
+          <svg class="right-arrow" width="40" height="48">
+            <use href="../img/icons.svg#icon-right-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -439,7 +449,7 @@
   </div>
 </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-close-btn" data-modal-close>
             <svg class="modal-close-icon" width="10.76" height="10.76">
@@ -476,53 +486,6 @@
 
 
     </form>
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/goit-bc50-html-css-project/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
-
 
     
     <script src="./js/modal.js"></script>
