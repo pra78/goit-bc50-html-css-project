@@ -17,7 +17,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-7904166f.css">
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-04793e04.css">
   </head>
   <body>
     <!-- <section>
@@ -27,45 +27,364 @@
     </section> -->
 
     <!-- Loads the specified .html file -->
-    
-    
-    
-    <section class="favorites">
+    <!-- HEADER -->
+<header class="header-section">
+  <a href="#" class="header-logo">
+    <svg width="66" height="52">
+      <use href="../img/icons.svg#icon-logo"></use>
+    </svg>
+  </a>
+  <div class="header-wrap">
+    <nav class="header-nav">
+      <ul class="header-menu">
+        <li class="header-menu-item"><a href="#home">Home</a></li>
+        <li class="header-menu-item"><a href="#about">About</a></li>
+        <li class="header-menu-item"><a href="#service">Service</a></li>
+        <li class="header-menu-item"><a href="#menu">Menu</a></li>
+        <li class="header-menu-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button type="button">Order Now</button>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="order">
+    <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+    <p class="hero-desc">
+      With just a few clicks, you can have your favorite meals delivered
+      straight to your doorstep, no matter where you are. Order now and enjoy a
+      hassle-free and delicious meal from the comfort of your own home.
+    </p>
+    <button type="submit" class="hero-btn">Order Now</button>
+  </div>
+  <div class="slider-container">
+    <div class="outer-circle">
+      <button type="button" class="left-slider">
+        <svg class="left-arrow" width="40" height="48">
+          <use href="../img/icons.svg#icon-left-arrow"></use>
+        </svg>
+      </button>
+      <img src="../img/hero-images/slider-option-1.png" alt="food option" />
+      <button type="button" class="left-slider">
+        <svg class="right-arrow" width="40" height="48">
+          <use href="../img/icons.svg#icon-right-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section id="service" class="special-section">
+    <div class="container special-wrap">
+        <div class="special-image-container">
+            <img src="" alt="green apple" class="special-image">
+        </div>
+        <div class="special-content-wrap">
+            <h2 class="special-title">What's Special About Our Offerings</h2>
+            <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
+            variety of dishes that cater to your specific taste buds.</p>
+            <ul class="special-list">
+                <li class="special-item">
+                    <svg class="special-icon">
+                        <use></use>
+                    </svg>
+                    <h3 class="special-item-title">Fastest Delivery</h3>
+                    <p class="special-item-text">Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you within
+                    30-minutes.</p>
+                </li>
+                <li class="special-item">
+                    <svg class="special-icon">
+                        <use></use>
+                    </svg>
+                    <h3 class="special-item-title">Easy To Order</h3>
+                    <p class="special-item-text">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
+                    just a few clicks.</p>
+                </li>
+            </ul>
+            <button type="button" class="special-button">Order Now</button>
+        </div>
+    </div>
+</section>
+      <section class="section" id="menu">
     <div class="container">
         <h2 class="favorites_title">Some of Our Favorites</h2>
-        <p class="favorites_sub_title">Looking for something delicious?</p>
+        <p class="favorites_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <ul class="favorites_list">
             <li class="favorites_item">
-                <img srcset=""
-                src="" alt="burger" class="features_img">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/mobile_burger-min.png" alt="burger" class="features_img" width="224px" height="224px">
+                </a>
             </li>
             <li class="favorites_item">
-                <img srcset=""
-                src="" alt="spaghetti" class="features_img">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/mobile_pasta-min.png" alt="spaghetti" class="features_img" width="224px" height="224px">
+                </a>
             </li>
             <li class="favorites_item">
-                <img srcset=""
-                src="" alt="pizza" class="features_img">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/mobile_pizza-min.png" alt="pizza" class="features_img" width="224px" height="224px">
+                </a>
             </li>
-            <li class="favorites_item">
-                <img srcset=""
-                src="" alt="chicken" class="features_img">
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/desk_chicken-min.png" alt="chicken" class="features_img">
+                </a>
             </li>
-            <li class="favorites_item">
-                <img srcset=""
-                src="" alt="fish" class="features_img">
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/desk_salat-min.png" alt="fish" class="features_img">
+                </a>
             </li>
-            <li class="favorites_item">
-                <img srcset=""
-                src="" alt="borsch" class="features_img">
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <img srcset=""
+                    src="../img/favorites/desk_borshch-min.png" alt="borsch" class="features_img">
+                </a>
             </li>
         </ul>
     </div>
 </section>
+      <section class="review section">
+<div class="container">
+  <h2 class="review-title">What our Customers Say</h2>
+  <p class="">Don't just take our word for it - see what our satisfied customers have to say</p>
+  <article class="review-card">
+    <ul class="review-rate">
+      <li class="review-star">
+        <svg class="review-icon" width="17"
+        height="16">
+            <use href="../img/icons.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17"
+        height="16">
+            <use href="../img/icons.svg#icon-star"></use>
+        </svg>
+       </li>
+      <li class="review-star" >
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+       </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17"
+        height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+        </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+        </li>
+    </ul>
+    <p class="review-text">
+      “The Best app I have used to order food in a while, so many options to
+      choose from too, I would recommend to a freind, No questions asked”
+    </p>
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="../img/boy-desk-1x.jpg 1x, ../img/boy-desk-2x.jpg 2x"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="../img/boy-tab-1x.jpg 1x, ../img/boy-tab-2x.jpg 2x"
+      />
+
+      <source
+        media="(min-width: 320px)"
+        srcset="../img/boy-mob-1x.jpg 1x, ../img/boy-mob-2x.jpg 2x"
+      />
+      <img src="../img/boy.jpg" alt="Sumith Shah" width="48" height="48" />
+    </picture>
     
+    <p class="review-name">Sumith Shah</p>
+    <p class="review-position">Some Dude</p>
+  </article>
+  <article class="review-card">
+    <ul class="review-rate">
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+        </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+      </li>
+      <li class="review-star">
+        <svg class="review-icon" width="17" height="16">
+            <use href="../img/star.svg#icon-star"></use>
+        </svg>
+      </li>
+    </ul>
+    <p class="review-text">
+      “The ease with which I can just go in and order what i want was amazing,
+      It has been a very pleasant experience ordering from this app”
+    </p>
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="../img/girl-desk-1x.jpg 1x, ../img/girl-desk-2x.jpg 2x"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="../img/girl-tab-1x.jpg 1x, ../img/girl-tab-2x.jpg 2x"
+      />
+
+      <source
+        media="(min-width: 320px)"
+        srcset="../img/girl-mob-1x.jpg 1x, ../img/girl-mob-2x.jpg 2x"
+      />
+      <img src="../img/girl.jpg" alt="Sumith Shah" width="48" height="48" />
+    </picture>
     
-    
-    <div class="backdrop">
+    <p class="review-name">Sumith Shah</p>
+    <p class="review-position">Some Dude</p>
+  </article>
+</div>
+</section>
+
+      <section class="subscribe" id="contact">
+  <div class="container subscribe-wrap">
+    <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe-text">
+      Order now and receive 10% off your first meal with Enjoy Your Favorite
+      Food From Anywhere.
+    </p>
+    <form class="cubscribe-form">
+      <label class="subscribe-label">
+        <input
+          class="subscribe-input"
+          id="subscribe"
+          name="subscribe"
+          type="email"
+          title="Not a valid email address (example@email.com)"
+          minlength="6"
+          maxlength="25"
+          placeholder="Enter your email"
+          required
+        />
+        <span class="subscribe-error">
+          Not a valid email address (example@email.com)
+        </span>
+        <button class="subscribe-button" type="submit">Subscribe</button>
+      </label>
+    </form>
+    <picture class="subscribe-img">
+      <source
+        srcset="
+          ../img/subscribe/banan-desc.png    1x,
+          ../img/subscribe/banan-desc-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/subscribe/banan-tabl.png    1x,
+          ../img/subscribe/banan-tabl-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../img/subscribe/banan-mob.png    1x,
+          ../img/subscribe/banan-mob-2x.png 2x
+        "
+        media="(min-width: 480px)"
+      />
+      <img src="../img/subscribe/banan-desc.png" alt="banana" />
+    </picture>
+  </div>
+</section>
+
+    </main>
+    <footer class="container">
+  <div class="footer-block-first">
+    <nav class="footer-nav-menu">
+      <a class="footer-logo" href="#">
+        <svg>
+          <use href="../img/icons.svg#icon-logo" width="66" height="52"></use>
+        </svg>
+      </a>
+      <ul class="footer-nav-menu">
+        <li class="footer-nav-menu-item">
+          <a class="footer-nav-menu-link" href="#home">Home</a>
+        </li>
+        <li class="footer-nav-menu-item">
+          <a class="footer-nav-menu-link" href="#about">About</a>
+        </li>
+        <li class="footer-nav-menu-item">
+          <a class="footer-nav-menu-link" href="#service">Service</a>
+        </li>
+        <li class="footer-nav-menu-item">
+          <a class="footer-nav-menu-link" href="#menu">Menu</a>
+        </li>
+        <li class="footer-nav-menu-item">
+          <a class="footer-nav-menu-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-subscribe">
+      <p class="subscribe">Subscribe</p>
+      <form class="footer-form">
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          class="footer-input"
+          required
+        />
+        <button type="submit" class="footer-submit-button">Subscribe</button>
+        <p>
+          By subscribing you agree to with our &nbsp;<a
+            class="footer-subscribe-link"
+            href=""
+            >Privacy Policy</a
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="footer-block-second">
+    <ul class="footer-list">
+      <li class="footer-list-item">
+        <a class="footer-list-link">Privacy Policy</a>
+      </li>
+      <li class="footer-list-item">
+        <a class="footer-list-link">Terms of Service</a>
+      </li>
+      <li class="footer-list-item">
+        <a class="footer-list-link">Cookies Settings</a>
+      </li>
+    </ul>
+    <p class="footer-text">&copy;2022 FoodSta. All right reserved.</p>
+  </div>
+</footer>
+
+    <div class="backdrop visually-hidden">
     <div class="modal">
         <button class="modal-close-btn">
             <svg class="modal-close-icon" width="10.76" height="10.76">
@@ -74,10 +393,9 @@
         </button>
 
 
-        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <p class="modal-title">Order Form</p>
 
         <form>
-
 
             <label for="input-name" class="form-label">Name</label>
             <div class="input-wrap">
@@ -93,14 +411,14 @@
 
             <label for="input-email" class="form-label">Email</label>
             <div class="input-wrap">
-                <input type="email" name="email" class="modal-input" placeholder="example@gmail.com" required
+                <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
                     id="input-email">
             </div>
-
+            <button type="submit" class="submit-button">Send</button>
     </div>
 
 
-    <button type="submit" class="submit-button">Send</button>
+
 
     </form>
 
