@@ -16,6 +16,7 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal.css');
+@import url(./hero-mobile.css);
 
 :root {
   font-family: Roboto, sans-serif;
