@@ -63,15 +63,20 @@
 }
 
 .slider-btn {
+  background-color: white;
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.icon-left-arrow {
   width: 40px;
   height: 48px;
 }
-
+.slider-btn:hover .left-arrow {
+  stroke: #7eb101;
+}
+.slider-btn:hover .right-arrow {
+  stroke: #7eb101;
+}
 .hero-btn {
   width: 98px;
   height: 32px;
@@ -82,4 +87,9 @@
   border-radius: 30px;
   border: none;
   padding: 6px 18px;
+}
+
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--yellow-main);
+  transition: background-color, 250ms;
 }
