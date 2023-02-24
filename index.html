@@ -18,7 +18,7 @@
     <title>FoodSta</title>
     
     <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-44ccfd60.css">
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-6e1c83e0.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -125,16 +125,22 @@
 </section>
 
         <section id="service" class="special-section section">
-    <div class="container">
+    <div class="container special-wrap">
         <div class="special-images-wrap">
-                <img 
-                srcset="/goit-bc50-html-css-project/assets/mobile-apple-png-2x-f937efae.png 2x"
-                src="/goit-bc50-html-css-project/assets/mobile-apple-png-d2fe3944.png" alt="green apple" width="202" height="256" class="special-image">
+                <picture>
+                    <source media="(min-width: 1280px)" 
+                    srcset="/goit-bc50-html-css-project/assets/desk-apple-402fa565.png 1x, /goit-bc50-html-css-project/assets/desk-apple-2x-6a42684e.png 2x">
+                    <source media="(min-width: 768px)" 
+                    srcset="/goit-bc50-html-css-project/assets/tablet-apples-9b2ee62a.png 1x, /goit-bc50-html-css-project/assets/tablet-apples-2x-3509a2c4.png 2x">
+                    <source media="(min-width: 320px)" 
+                    srcset="/goit-bc50-html-css-project/assets/mobile-apple-png-d2fe3944.png 1x, /goit-bc50-html-css-project/assets/mobile-apple-png-2x-f937efae.png 2x">
+                    <img src="/goit-bc50-html-css-project/assets/desk-apple-402fa565.png" alt="green apple" class="special-image" loading="lazy">
+                </picture>
         </div>
         <div class="special-content-wrap">
-            <h2 class="special-title">What's Special About Our Offerings</h2>
-            <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
-            variety of dishes that cater to your specific taste buds.</p>
+                <h2 class="special-title">What's Special About Our Offerings</h2>
+                <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
+                variety of dishes that cater to your specific taste buds.</p>
             <ul class="special-list">
                 <li class="special-item">
                     <h3 class="special-item-title">Fastest Delivery</h3>
@@ -146,17 +152,19 @@
                     <p class="special-item-text">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
                     just a few clicks.</p>
                 </li>
+                <li class="special-item">
+                    <div class="special-bottom-wrap">
+                        <button type="button" class="special-button" data-modal-open>Order Now</button>
+                        <div class="text-wrap">
+                            <span class="read-more-text">Read More</span>
+                            <span>
+                                <svg class="arrow-icon" width="13" height="13">
+                                    <use href="/goit-bc50-html-css-project/assets/icons-41f7d4ae.svg#icon-arrow-right-no-border"></use>
+                                </svg>
+                            </span>
+                    </div>
+                </li>
             </ul>
-            <div class="special-bottom-wrap">
-                <button type="button" class="special-button" data-modal-open>Order Now</button>
-                <div class="text-wrap">
-                    <span class="read-more-text">Read More</span>
-                    <span>
-                        <svg class="arrow-icon" width="13" height="13">
-                            <use href="/goit-bc50-html-css-project/assets/icons-41f7d4ae.svg#icon-arrow-right-no-border"></use>
-                        </svg>
-                    </span>
-                </div>
             </div>
         </div>
     </div>
@@ -520,41 +528,34 @@
 
         <p class="modal-title">Order Form</p>
 
-        <form>
+        <form class="order-form">
 
             <label for="input-name" class="form-label">Name</label>
-            <div class="input-wrap">
-                <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="3"
-                    maxlength="25" id="input-name">
-                <span class="phone-error">
-                    The name must be between 3 and 25 characters
-                </span>
-            </div>
+
+            <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="3"
+                maxlength="25" id="input-name">
+            <span class="name-error">
+                The name must be between 3 and 25 characters
+            </span>
+
 
             <label for="input-tel" class="form-label">Phone</label>
-            <div class="input-wrap">
-                <input type="tel" name="phone" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _" required
-                    pattern="\d\d\d\d\d\d\d\d\d\d" minlength="10" maxlength="10" id="input-tel">
-                <span class="phone-error">
-                    This phone must be in the format 099 000 00 00
-                </span>
-            </div>
+
+
+
 
             <label for="input-email" class="form-label">Email</label>
-            <div class="input-wrap">
-                <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
-                    minlength="6" maxlength="25" id="input-email">
-                <span class="email-error">
-                    Not a valid email address (example@email.com)
-                </span>
-            </div>
-            <button type="submit" class="submit-button">Send</button>
+
+            <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
+                minlength="6" maxlength="25" id="input-email">
+            <span class="email-error">
+                Not a valid email address (example@email.com)
+            </span>
+
+
     </div>
-
-
-
-
-    </form>
+</div>
+  </form>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
