@@ -13,12 +13,16 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <title>FoodSta</title>
     
-    <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-9c9158a9.js"></script>
-    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-dac3053e.css">
+    <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-7c187b6e.js"></script>
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-820d6e09.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -98,9 +102,9 @@
       </p>
       <button type="submit" class="hero-btn" data-modal-open>Order Now</button>
     </div>
-    <div class="slider-container">
+    <div class="slider-container swiper">
       <div class="outer-circle">
-        <button type="button" class="left-slider slider-btn">
+        <button type="button" class="left-slider slider-btn swiper-button-prev">
           <svg class="left-arrow" width="16" height="29">
             <use
               href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-left"
@@ -108,10 +112,9 @@
             ></use>
           </svg>
         </button>
-
-        <div class="hero-gallery-wrap">
-          <ul class="gallery-list swiper swiper-container">
-            <li class="gallery-item swiper-wrapper">
+        <div class="hero-gallery-wrap swiper-container">
+          <ul class="gallery-list swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -128,7 +131,7 @@
                 />
               </picture>
             </li>
-            <li class="gallery-item swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -145,7 +148,7 @@
                 />
               </picture>
             </li>
-            <li class="gallery-item swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -163,7 +166,10 @@
               </picture>
             </li>
           </ul>
-          <button type="button" class="right-slider slider-btn">
+          <button
+            type="button"
+            class="right-slider slider-btn swiper-button-next"
+          >
             <svg class="right-arrow" width="16" height="29">
               <use
                 href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-right"
@@ -623,5 +629,6 @@
 </div>
 
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
