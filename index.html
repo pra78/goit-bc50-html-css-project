@@ -18,7 +18,7 @@
     <title>FoodSta</title>
     
     <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-9c9158a9.js"></script>
-    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-6440e349.css">
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-6a2be2fa.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -88,12 +88,11 @@
     <main>
       <div class="hero-special">
         <section id="home" class="hero-section">
-  <div class="hero-container">
+  <div class="hero-container container">
     <div class="order">
       <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
       <p class="hero-desc">
-        With just a few clicks, you can have your favorite meals
-        delivered 
+        With just a few clicks, you can have your favorite meals delivered
         straight to your doorstep, no matter where you are. Order now and enjoy
         a hassle-free and delicious meal from the comfort of your own home.
       </p>
@@ -109,34 +108,69 @@
             ></use>
           </svg>
         </button>
-       
+
         <div class="hero-gallery-wrap">
-      <ul class="gallery-list swiper swiper-container">
-        <li class="gallery-item swiper-wrapper">
-          <img
-          src="/goit-bc50-html-css-project/assets/slider-option-1-41dcee5d.png"
-          class="img-food"
-          alt="food option"
-        />
+          <ul class="gallery-list swiper swiper-container">
             <li class="gallery-item swiper-wrapper">
-          <img
-          src="/goit-bc50-html-css-project/assets/slider-option-2-302a5e69.png"
-          class="img-food"
-          alt="food option"
-        />
-           <li class="gallery-item swiper-wrapper">
-          <img
-          src="/goit-bc50-html-css-project/assets/slider-option-3-feb91e14.png"
-          class="img-food"
-          alt="food option"
-        />
-        </li>
-      </ul>
-        <button type="button" class="right-slider slider-btn">
-          <svg class="right-arrow" width="16" height="29">
-            <use href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-right"></use>
-          </svg>
-        </button>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-1-41dcee5d.png 1x, /goit-bc50-html-css-project/assets/slider-option-1@2x-77a9c36b.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-1-tab-b9fb005c.png 1x, /goit-bc50-html-css-project/assets/slider-option-1-tab@2x-136d98ee.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-1-41dcee5d.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item swiper-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-2-302a5e69.png 1x, /goit-bc50-html-css-project/assets/slider-option-2@2x-30d868d2.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-2-tab-49fd19eb.png 1x, /goit-bc50-html-css-project/assets/slider-option-2-tab@2x-2bad799b.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-2-302a5e69.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item swiper-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-3-feb91e14.png 1x, /goit-bc50-html-css-project/assets/slider-option-3@2x-41564645.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-3-tab-8b0c60d6.png 1x, /goit-bc50-html-css-project/assets/slider-option-3-tab@2x-31ba0ad6.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-3-feb91e14.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+          </ul>
+          <button type="button" class="right-slider slider-btn">
+            <svg class="right-arrow" width="16" height="29">
+              <use
+                href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-right"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
